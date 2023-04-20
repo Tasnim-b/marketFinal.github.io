@@ -1,0 +1,206 @@
+  /*color: #efe5db */
+ 
+
+/*start navbarre*/
+.logo{
+
+  position: absolute;
+  height: 65px;
+  width: 70px;
+	display: block;
+  float: left;
+  max-width: 100%;
+  background-size: 249px;
+  background-repeat: no-repeat;
+}
+.containernav{
+  margin-left:120px ;
+ }
+  .nav-bar{margin-left:0;
+     margin-right:900px ;
+    }
+  nav {
+    background-color: #bef574;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    height: 70px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  .right-icons {
+    display: flex;
+    align-items: right;
+    margin-left: 900px;
+  }
+  
+  .right-icons a {
+    margin-right: 10px;
+    color: #000000;
+  }
+  
+  
+  .search-form {
+    display: flex;
+    margin-right: 20px;
+    border: #bef574;
+
+    
+  }
+  
+  .search-button{
+    background-color: #F6F0E2;
+    width: 15px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    
+
+  }
+  .search-bar{
+    background-color: #F6F0E2;
+
+    border-radius: 15px;
+    margin-top: 8px;
+    padding: 1px;
+    border-color: #F6F0E2;
+    border-style: groove;
+    margin-right: 20px;
+}
+.fa-search{
+  padding-right: 5px;
+} 
+ 
+  /*end navbarre*/
+ 
+/*start contenu*/
+.container-1{
+  display: inline-block;
+position: relative;
+width: 1460.9px;
+height: 1024px;
+background: #F6F0E2;
+}
+.p1{
+  height: 1024px;
+  width: 800px;
+}
+.symbole{
+  color: #008000;
+}
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #EE82EE;
+  margin-right: 200px;
+  margin-bottom: 500px;
+  font-size: medium;
+  font-weight: 1000;
+}
+.partie-principale{
+  display: flex;
+  background-color: #F6F0E2;
+ 
+}
+.container-1{
+  flex: 2;
+
+}
+.container-2{
+  flex: 1;
+  padding: 200px;
+  display: inline-block;
+}
+ 
+
+/*end contenu*/
+/*start forum*/
+form {border: 3px solid #F6F0E2;}
+
+input[type=text], input[type=password] {
+  width: 120%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #F6F0E2;
+  box-sizing: border-box;
+  border-radius: 30px;
+  text-align: center;
+  max-width: 50%;
+}
+input[type=text]{
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #FFA500;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 30px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+.container {
+  padding: 15px;
+  width: -100%;
+  text-align: start;
+}
+
+span.psw {
+  float: left;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+/* @media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: ;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+} */
+/*end form*/
+/*start footer*/
+.container-f{
+  margin-top: 35px;
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: 400px 350px 350px 350px;
+}
+.fab{
+  margin-right: 7px;
+}
+/*end footer */

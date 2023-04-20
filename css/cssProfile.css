@@ -1,0 +1,113 @@
+header {
+    background-color:#DAF3A5;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    
+  }
+    img{
+    width: 100px;
+    height: 100px;
+    border-radius: 70%;
+    padding: 5px;
+    transform: translate(10px,30px);
+  
+  }
+  
+  
+  button {
+      border-radius: 20px;
+      border: 1px solid #FF4B2B;
+      background-color: #FEB157;
+      color: #FFFFFF;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 12px 45px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: transform 80ms ease-in;
+  cursor: pointer;
+  }
+  form{
+      text-align: center;
+       background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 40px;
+      height: 100%;
+      text-align: center;
+  }
+  input {
+      text-align: center;
+      background-color: #eee;
+      border: none;
+      padding: 9px 9px;
+      margin: 5px 0;
+      width:30%;}
+  .imag-container{
+      background-color: white;
+      width: 150px;
+      height: 150px;
+      border-radius: 80%;
+      padding: 5px;
+      transform: translate(640px,-30px);
+  }
+  form label img{
+      cursor: pointer;
+  }
+  .imag-container label {
+      background-color: white;
+      width:50px;
+      height: 50px;
+      border-radius: 80%;
+  }
+      
+  .container {
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  
+  .form .container label {
+    font-size: 20px;
+    margin-bottom: 30px;
+    display: block;
+  }
+  
+  .container input[type="file"] {
+    margin-bottom: 20px;
+    width:150px;
+    height: 150px;
+    border-radius: 80%;
+  
+  }
+  .container input[type="submit"] {
+    font-size: 18px;
+    padding: 3px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"] {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="elaa mokrani">
+    <link rel="stylesheet" href="css/panier.css">
+    <link rel="stylesheet" href="js/panier.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>panier</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="fontawesome" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/fontawesome.min.css"/>
+</head>
+
+<body>
+  <!--start navbar-->
+<nav class="navbar navbar-expand-lg" >
+  <img src="img/fotor_2023-3-22_15_7_54.png" class="logo">
+  <div class="containernav">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="login.html"><span>Home</span><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <span>Homme</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="homme sportwear.html"><span>Sportwear</span></a>
+              <a class="dropdown-item" href="#"><span>Pantalon</span></a>
+              <a class="dropdown-item" href="chaussure homme.html"><span>Chaussures</span></a>
+           
+          </div>
+        </li>
+       
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <span>Femme</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="chemise-f.html"><span>Chemise</span></a>
+            <a class="dropdown-item" href="pantalon-f.html"><span> Pantalon</span></a>
+            <a class="dropdown-item" href="chaussures-f.html"><span>Chaussures</span></a>
+          </div>
+        </li>
+         <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Kids</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="new born clothes.html"><span>Chemise</span></a>
+                <a class="dropdown-item" href="kids clothes.html"><span>Pantalon</span></a>
+                <a class="dropdown-item" href="kids shoes.html"><span>Chaussures</span></a>
+            </div>
+        </li>
+      </ul>
+    </div>
+  
+  </div>
+  <div class="right-icons">
+    <a href="#"><i class="fa fa-heart"></i></a>
+    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+    <a href="#"><i class="fa fa-user-plus"></i></a>
+  </div>
+
+  </nav>
+  <!--end navbar-->  
+  <main>
+    <div class="basket">
+      <div class="basket-module">
+        <label for="promo-code">Enter a promotional code</label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Apply</button>
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+     <!--------------------article1-------------------->
+
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://i.pinimg.com/564x/50/97/ef/5097ef93116391a28928412d016ec6d5.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">2</span> x ZARA</strong> chemise </h1>
+            <p><strong>zara, Size s</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">26</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">104.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>    <!--------------------article2-------------------->
+
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://i.pinimg.com/564x/59/ad/86/59ad861e15f86edb06778505da460035.jpg" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">1</span> x </strong> vetement bebe naissance</h1>
+            <p><strong>ZEN</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">87</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">104</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+          <!--------------------article3-------------------->
+
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="https://i.pinimg.com/564x/75/45/57/754557db6eaf3a8b033b061d8122b48e.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">1</span> x </strong> chossure femme </h1>
+            <p><strong>PRADA, Size 38</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">26.00</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">26.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <!---------------------------------------->
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">130</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+              <option value="0" selected="selected">Select Collection or Delivery</option>
+             <option value="collection">Collection</option>
+             <option value="first-class">Royal Mail 1st Class</option>
+             <option value="second-class">Royal Mail 2nd Class</option>
+             <option value="signed-for">Royal Mail Special Delivery</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">130</div>
+        </div>
+        <div class="summary-checkout">
+         
+
+    <button class="btn"  onclick="window.location.href = 'paiement.html';">   confirm and pay</button>
+
+
+</a> 
+        </div>
+      </div>
+    </aside>
+  </main>
+ 
+</body>
+
+</html>

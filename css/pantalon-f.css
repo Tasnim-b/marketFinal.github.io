@@ -1,0 +1,226 @@
+.logo{
+      
+    position: absolute;
+    height: 65px;
+    width: 70px;
+    display: block;
+    float: left;
+    max-width: 100%;
+    background-size: 249px;
+    background-repeat: no-repeat;
+  }
+  .containernav{
+    margin-left:120px ;
+   }
+    .nav-bar{margin-left:0;
+       margin-right:900px ;
+      }
+    nav {
+      background-color: #bef574;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      height: 70px;
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      margin-right: 20px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 16px;
+    }
+    
+    .right-icons {
+      display: flex;
+      align-items: right;
+      margin-left: 900px;
+    }
+    
+    .right-icons a {
+      margin-right: 10px;
+      color: #000000;
+    }
+    /* end navbarr */
+/*card*/
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+  /*color od star*/
+    .checked {
+    color: orange;
+  }
+  #product1{
+    text-align: center;
+  }
+  
+  
+  #product1 h2{
+    padding-top: 10px;
+    font-style: oblique 
+  }
+  #product1 .pro {
+  width:10%;
+  padding:10px 12px;
+  border:1px solid;
+  min-width: 250px;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+  cursor: pointer;
+  background-color: #FFF5EE;
+  }
+  /*info des articles*/
+  #product1 .pro img {
+  width: 50%;/*grandeure d'article*/
+  border-radius: 10px;}
+  
+  /*ariere card "thel"*/
+  #product1 .pro:hover{
+    box-shadow:20px 20px 30px rgba(0, 0, 0, 0.06) ;
+  }
+  
+  
+  #product1 .pro .des {
+    text-align: start;
+    padding: 5px 0;/*espace entre photo et nom du marke*/
+  }
+  
+  /*nom du marke*/
+  #product1 .pro-container .pro .des span{
+    color: black;
+    font-size: 10px;
+  }
+  /*discrption article*/
+  #product1 .pro-container .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+  }
+  /*prix*/
+  #product1 .pro .des h4{
+     padding-top: 7px;
+    color: green;
+    font-size: 15px;
+    font-weight: 700px;
+  }
+   #product1 .pro .cart{
+    width: 50px;
+    height:50px;
+    line-height: 70px;
+    border-radius: 50px;
+    font-weight: 50px;
+    color: black;
+    border: 1px solid;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+ /*start footer*/
+.container-f{
+  margin-top: 35px;
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: 400px 350px 350px 350px;
+}
+.fab{
+  margin-right: 7px;
+}
+/*end footer */
+  
+  
+  /*start button chario*/
+   .shopping-cart-button {
+    display: inline-block;
+    position:static;
+    background-color: #FDF5E6;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 50%;
+    padding: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 150px;
+  }
+  .shopping-cart-button:hover {
+    background-color: white;
+  }
+  .shopping-cart-button .shopping-cart-image {
+    width: 40px;
+    height: 40px;
+  }
+  .shopping-cart-button .badge {
+    display: inline-block;
+    position:absolute;
+    top: -8px;
+    right: -7px;
+    background-color: #ff3b3f;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 60%;
+    line-height: 18px;
+  }/*end button chario*/
+  
+  /*contenue de card*/
+  .container{
+    
+    margin-right: 20px;
+    margin-left:20px ;
+  }
+  /*la grande carte*/
+  .card {
+    
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; background-color: #fff;
+    border-radius: 10px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.22);
+      position: relative;
+      overflow: hidden;
+      width: 1300px;
+      max-width: 700%;
+      min-height: 60px;
+      margin-top: 20px;
+      margin-right: 10px;
+      margin-left: 80px;
+      background-color: #FDF5E6;
+  
+  
+  
+  }
+   .card   .container .pro-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+   }

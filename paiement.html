@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>paiement</title>
+    <link rel="stylesheet" type="text/css" href="css/paiement.css">
+   
+</head>
+
+<body>
+
+<div id="wrapper">
+  <div class="row">
+    <div class="col-xs-5">
+      <div id="cards">
+        <img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Visa-icon.png">
+        <img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Master-Card-icon.png">
+      </div><!--#cards end-->
+      <div class="form-check">
+  <label class="form-check-label" for='card'>
+    <input id="card" class="form-check-input" type="checkbox" value="">
+    Pay 150dt with credit card
+  </label>
+</div>
+    </div><!--col-xs-5 end-->
+    <div class="col-xs-5">
+      <div id="cards">
+        <img src="https://th.bing.com/th/id/R.c26acd1801f8275ce8fe05a7d566fdaf?rik=YEYP11%2bwTmZsFg&pid=ImgRaw&r=0">
+      </div><!--#cards end-->
+      <div class="form-check">
+  <label class="form-check-label" for='paypal'>
+    <input id="paypal" class="form-check-input" type="checkbox" value=""  required>
+    Pay 150dt with e-dinar
+  </label>
+</div>
+    </div><!--col-xs-5 end-->
+  </div><!--row end-->
+  <div class="row">
+    <div class="col-xs-5">
+      <i class="fa fa fa-user"></i>
+      <label for="cardholder">Cardholder's Name</label>
+      <input type="text" id="cardholder"  required>
+    </div><!--col-xs-5-->
+    <div class="col-xs-5">
+      <i class="fa fa-credit-card-alt"></i>
+      <label for="cardnumber">Card Number</label>
+      <input type="text" id="cardnumber" required>
+    </div><!--col-xs-5-->
+  </div><!--row end-->
+  <div class="row row-three">
+    <div class="col-xs-2">
+      <i class="fa fa-calendar"></i>
+      <label for="date">Valid thru</label>
+      <input type="text" placeholder="MM/YY" id="date" required>
+    </div><!--col-xs-3-->
+    <div class="col-xs-2">
+      <i class="fa fa-lock"></i>
+      <label for="date">CVV / CVC *</label>
+      <input type="password"  required>
+    </div><!--col-xs-3-->
+    <div class="col-xs-5">
+      <span class="small">* CVV or CVC is the card security code, unique three digits number on the back of your card seperate from its number.</span>
+    </div><!--col-xs-6 end-->
+  </div><!--row end-->
+  <footer>
+    
+    <button class="btn"  onclick="window.location.href = 'panier.html';">   Back</button>
+    <button class="btn"  onclick="window.location.href = 'pai-post.html';"> Next Step</button>
+  </footer>
+</div><!--wrapper end-->
+<!---------------------------------->
+</body>
+</html>
+   
+        
+   
+
+  
