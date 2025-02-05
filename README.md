@@ -43,3 +43,5 @@ cd marketFinal.github.io
 
 3️⃣ Parcourir et tester les différentes fonctionnalités du site.
 
+![Home Interface](https://raw.githubusercontent.com/Tasnim-b/marketFinal.github.io/7fb4d2639aafd38165caafc308309b907ad3c92f/les_interface_web/Home.jpeg)
+
