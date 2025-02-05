@@ -1,0 +1,748 @@
+
+/* Minerva core styles & utilities
+============================================ */
+
+/* Utility classes  */
+
+.no-wrap { white-space: nowrap; }
+.no-overflow { overflow: hidden; }
+.undo-collapse { min-height: 1px; }
+.visibility-hidden { visibility: hidden; }
+
+.full-width { width: 100%; }
+.full-height { height: 100%; }
+.resize-none { resize: none; }
+.resize-horizontal { resize: horizontal; }
+.resize-vertical { resize: vertical; }
+.align-bottom { vertical-align: bottom; }
+
+.border-thick { border-width: 3px; }
+.border-thickest { border-width: 6px; }
+.border-dashed { border-style: dashed; }
+
+.table-cell { display: table-cell; }
+
+.p0 { padding: 0; }
+
+.cursor-not-allowed { cursor: not-allowed; }
+.cursor-pointer {cursor: pointer;}
+.no-click { pointer-events: none; }
+.yes-click { pointer-events: auto; }
+.no-hover:hover { text-decoration: inherit; }
+.hover-underline:hover { text-decoration: underline; }
+.text-decoration-none, .text-decoration-none:hover { text-decoration: none; }
+.text-decoration-underline { text-decoration: underline; }
+
+.nudge-up-5 { margin-top: -5em; }
+
+video {
+  max-width: 100%;
+}
+
+/* extends Bascss button styles  */
+button:disabled, .button:disabled, .btn:disabled, .btn-primary:disabled { cursor: not-allowed; }
+.circle { border-radius: 50%; }
+.border-pill { border-radius: 600px; }
+
+.circle-button, .circle-button-med { display:block;width:30px;height:30px;line-height:30px;border: 1px solid #f5f5f5;border-radius: 50%;text-align:center;text-decoration:none;box-shadow: 0 0 3px gray;font-size:13px;font-weight:bold;}
+.circle-button-sm { display:block;width:40px;height:40px;line-height:40px;border: 1px solid #f5f5f5;border-radius: 50%;text-align:center;text-decoration:none;box-shadow: 0 0 3px gray;font-size:18px;font-weight:bold;}
+.circle-button-lg { display:block;width:60px;height:60px;line-height:60px;border: 1px solid #f5f5f5;border-radius: 50%;text-align:center;text-decoration:none;box-shadow: 0 0 3px gray;font-size:27px;font-weight:bold;}
+
+/* Soften rounded corners  */
+.button {border-radius:1px;}
+
+
+/* Typography */
+.no-leading { line-height: 1; }
+.compact-leading { line-height: 1.3; }
+.thin, .text-thin { font-weight: 100; letter-spacing: 0.9px; }
+.boldest, .text-boldest { font-weight: 800; }
+.uppercase { text-transform: uppercase; }
+.text-wide { letter-spacing:0.1px; }
+.monospace { font-family: 'Source Code Pro', Monaco, Consolas, monospace; }
+
+.text-smaller { font-size: 75%; }
+.text-larger { font-size: 125%; }
+.text-huge { font-size: 175%; }
+
+.opacity-3 { opacity: 0.3; }
+.opacity-4 { opacity: 0.4; }
+.opacity-5 { opacity: 0.5; }
+.opacity-6 { opacity: 0.6; }
+
+
+
+/*
+ * Legacy Colors
+ * TODO: Remove and update styleguide
+ */
+.teal { color: #56888e; }
+.green { color: #828b3f; }
+.mustard { color: #b28b3f; }
+.brass { color: #beb478; }
+.brick { color: #984a36; }
+.brown { color: #876046; }
+.red { color: #9C282B; }
+.gray { color: #78736e; }
+.darkest { color: #3c3732; }
+.mid { color: #5a5550; }
+.dark-gray { color: #525154; }
+.light { color: #96918c; }
+.lightest { color: #b4afaa; }
+.eggshell { color: #d2cdc8; }
+.whiteish { color: #f6f5f4; }
+.whitest { color: #fcfcfc; }
+.tan { color: #f0ebe6; }
+.ebony { color: #242424; }
+
+
+/* BACKGROUNDS */
+.bg-darkest { background-color: #3c3732; }
+.bg-mid { background-color: #5a5550; }
+.bg-light { background-color: #96918c; }
+.bg-lightest { background-color: #b4afaa; }
+.bg-eggshell { background-color: #d2cdc8; }
+.bg-whiteish { background-color: #f6f5f4; }
+.bg-whitest { background-color: #fcfcfc; }
+.bg-teal { background-color: #56888e; }
+.bg-green { background-color: #828b3f; }
+.bg-mustard { background-color: #b28b3f; }
+.bg-brass { background-color: #beb478; }
+.bg-brick { background-color: #984a36; }
+.bg-red { background-color: #9C282B; }
+.bg-brown { background-color: #876046; }
+.bg-tan { background-color: #f0ebe6; }
+.bg-ebony { background-color: #242424; }
+.bg-orange-gradient {
+  background: #ef5b30; /* Old browsers */ /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
+  background: linear-gradient(to bottom, #ee9446 0%, #ef5b30 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee9446', endColorstr='#ef5b30',GradientType=0 ); /* IE6-9 */
+  border: none;
+}
+/* STOPGAP: improves application sidebar - bg color stretches to window edge */
+@media (min-width: 52em) {
+  .md-bg-sidebar-gradient { background-image: linear-gradient(to right, #f4f4f4 70%, #D2cdc8 70%, #d2cdc8); }
+}
+
+/* BORDERS */
+.border-darkest { border-color: #3c3732; }
+.border-mid { border-color: #5a5550; }
+.border-light { border-color: #96918c; }
+.border-lightest { border-color: #b4afaa; }
+.border-eggshell { border-color: #d2cdc8; }
+.border-whiteish { border-color: #f6f5f4; }
+.border-whitest { border-color: #fcfcfc; }
+.border-teal { border-color: #56888e; }
+.border-green { border-color: #828b3f; }
+.border-mustard { border-color: #b28b3f; }
+.border-brass { border-color: #beb478; }
+.border-brick { border-color: #984a36; }
+.border-red { border-color: #9C282B; }
+.border-brown { border-color: #876046; }
+.border-tan { border-color: #f0ebe6; }
+.border-ebony { border-color: #242424; }
+
+
+
+/* TRANSITION COLORS */
+.hover-orange:hover { color: #f15a24; }    
+a.hoverline:hover {text-decoration: underline;}        
+a.hoverline-accent-light:hover {-webkit-text-decoration-color: #f0b423;-moz-text-decoration-color: #f0b423;text-decoration-color: #f0b423;}       
+a.hoverline-accent-mid:hover {-webkit-text-decoration-color: #f79421;-moz-text-decoration-color: #f79421;text-decoration-color: #f79421;}   
+a.hoverline-accent:hover {-webkit-text-decoration-color: #f15c28;-moz-text-decoration-color: #f15c28;text-decoration-color: #f15c28;}   
+a.hoverline-mid:hover {-webkit-text-decoration-color: #5a5550;-moz-text-decoration-color: #5a5550;text-decoration-color: #5a5550;}
+
+/*
+ * New Minerva Colors
+ * TODO: Review naming and add to styleguide
+ */
+
+/*
+ * Minerva Brand Colors
+ * Source: marketing brand colors, Restrained Palette
+ */
+
+.text-secondary, .brass { color: #beb478; }
+.border-secondary, .border-brass { border-color: #beb478; }
+.bg-secondary, .bg-brass { background-color: #beb478; }
+.bg-secondary-10 { background-color: #ffffff; background-color:rgba(190,180,120,.1) }
+.bg-secondary-20 { background-color: #ffffff; background-color:rgba(190,180,120,.2) }
+.hover-bg-secondary:hover { background-color: #beb478; transition:.25s; }
+
+.text-accent, .orange { color: #f15a24; }
+.border-accent, .border-orange { border-color: #f15a24; }
+.bg-accent, .bg-orange { background-color: #f15a24; }
+.bg-accent-10 { background-color: #ffffff; background-color:rgba(241,92,40,.1) }
+.bg-accent-20 { background-color: #ffffff; background-color:rgba(241,92,40,.2) }
+.hover-bg-accent:hover { background-color: #f15a24; transition:.25s; }
+.hover-orange:hover { color: #F57823; }
+
+.text-accent-mid, .tangerine, .light-orange { color: #f79421; }
+.border-accent-mid, .border-tangerine, .border-light-orange { border-color: #f79421; }
+.bg-accent-mid, .bg-tangerine, .bg-light-orange { background-color: #f79421; }
+.bg-accent-mid-10 { background-color: #ffffff; background-color:rgba(247,148,33,.1); }
+.bg-accent-mid-20 { background-color: #ffffff; background-color:rgba(247,148,33,.2); }
+.hover-bg-accent-mid:hover { background-color: #f79421; transition:.25s; }
+.hover-accent-mid:hover { color: #f79421; }
+
+.bright-yellow, .accent-light, .bright-amber { color: #F0B423; }
+.hover-accent-light:hover { color: #F0B423; }
+.border-bright-yellow, .border-accent-light, .border-bright-amber { border-color: #F0B423; }
+.bg-bright-yellow, .bg-accent-light, .bg-bright-amber { background-color: #F0B423; }
+.hover-bg-accent-light:hover { background-color: #F0B423; transition:.25s; }
+.hover-accent-light:hover { color: #F0B423; }
+
+
+.black { color: #111111; }
+.border-black { border-color: #111111; }
+.bg-black { background-color: #111111; }
+.bg-black-10 { background-color: #ffffff;background-color:rgba(17,17,17,.1); }
+.bg-black-20 { background-color: #ffffff;background-color:rgba(17,17,17,.2); }
+.hover-bg-black:hover { background-color: #111111; transition:.25s; }
+.hover-black:hover { color: #111111; }
+
+.text-900, .ebony { color: #242424; }
+.border-900, .border-ebony { border-color: #242424; }
+.bg-900, .bg-ebony { background-color: #242424; }
+
+.text-dark, .text-800, .darkest { color: #3c3732; }
+.border-dark, .border-darkest { border-color: #3c3732; }
+.bg-dark, .bg-800, .bg-darkest { background-color: #3c3732; }
+.bg-dark-10, .bg-darkest-10 { background-color: #ffffff;background-color:rgba(60,55,50,.1); }
+.bg-dark-20, .bg-darkest-20 { background-color: #ffffff;background-color:rgba(60,55,50,.2); }
+.hover-bg-dark:hover, .hover-bg-darkest:hover { background-color: #3c3732; transition:.25s; }
+.hover-dark:hover, .hover-darkest:hover { color: #3c3732; }
+
+.text-mid, .text-700, .mid, .dark-gray, .gray { color: #5a5550; }
+.border-mid { border-color: #5a5550; }
+.bg-mid { background-color: #5a5550; }
+.bg-mid-10 { background-color: #ffffff; background-color:rgba(90,85,80,.1); }
+.bg-mid-20 { background-color: #ffffff; background-color:rgba(90,85,80,.2); }
+.hover-bg-mid:hover, .hover-bg-mid:hover { background-color: #5a5550; transition:.25s; }
+.hover-mid:hover { color: #5a5550; }
+
+.text-light, .text-600, .light { color: #958f8b; }
+.border-light { border-color: #958f8b; }
+.bg-light { background-color: #958f8b; }
+.bg-light-10 { background-color: #958f8b; background-color:rgba(149,143,139, .1); }
+.bg-light-20 { background-color: #958f8b; background-color:rgba(149,143,139, .2); }
+.hover-bg-light:hover { background-color: #958f8b; transition:.25s; }
+.hover-light:hover { color: #958f8b; }
+
+.text-500, .lightest { color: #b4afaa; }
+.border-500, .border-lightest { border-color: #b4afaa; }
+.bg-500, .bg-lightest { background-color: #b4afaa; }
+.hover-lightest:hover { color: #b4afaa; }
+
+.text-400, .eggshell { color: #d2cdc8; }
+.border-400, .border-eggshell {border-color: #ff4136;}
+.bg-400, .bg-eggshell { background-color: #d2cdc8; }
+.hover-eggshell:hover { color: #d2cdc8; }
+
+.text-300, .tan { color: #f0ebe6; }
+.border-300, .border-tan { border-color: #f0ebe6; }
+.bg-300, .bg-tan { background-color: #f0ebe6; }
+.hover-tan:hover { color: #f0ebe6; }
+
+.text-200, .whiteish { color: #f4f4f4; }
+.border-200, .border-whiteish { border-color: #f4f4f4; }
+.bg-200, .bg-whiteish { background-color: #f4f4f4; }
+.hover-whiteish:hover { color: #f4f4f4; }
+
+.text-100, .whitest { color: #fcfcfc; }
+.border-100, .border-whitest { border-color: #fcfcfc; }
+.bg-100, .bg-whitest { background-color: #fcfcfc; }
+.hover-whitest:hover { color: #fcfcfc; }
+
+
+
+/*
+ * Minerva Web Colors
+ * Source: legacy file colors.css
+ */
+
+
+/* Alert Colors */
+
+.text-success, .green { color: #43c128; }
+.border-success, .border-green { border-color: #43c128!important; }
+.bg-success, .bg-green { background-color: #43c128; }
+.bg-success-10 { background-color: #ffffff; background-color:rgba(67,193,40,.1); }
+.bg-success-20 { background-color: #ffffff; background-color:rgba(67,193,40,.2); }
+.hover-bg-success:hover { background-color: #43c128; transition:.25s; }
+
+.text-success-light, .light-green { color: #b4d200; }
+.border-success-light, .border-light-green { border-color: #b4d200!important; }
+.bg-success-light, .bg-light-green { background-color: #b4d200; }
+.bg-success-light-10 { background-color: #ffffff; background-color:rgba(180,210,0,.1); }
+.bg-success-light-20 { background-color: #ffffff; background-color:rgba(180,210,0,.2); }
+.hover-bg-success-light:hover { background-color: #b4d200; transition:.25s; }
+
+.text-info, .blue { color: #3498DB; }
+.border-info, .border-blue { border-color: #3498DB!important; }
+.bg-info, .bg-blue { background-color: #3498DB; }
+.bg-info-10 { background-color: #ffffff; background-color:rgba(52,152,219,.1); }
+.bg-info-20 { background-color: #ffffff; background-color:rgba(52,152,219,.2); }
+.hover-bg-info:hover { background-color: #3498DB; transition:.25s; }
+
+.text-warning, .yellow { color: #fbb03c; }
+.border-warning, .border-yellow { border-color: #fbb03c!important; }
+.bg-warning, .bg-yellow { background-color: #fbb03c; }
+.bg-warning-10 { background-color: #ffffff;background-color: rgba(251,176,60,.1); }
+.bg-warning-20 { background-color: #ffffff;background-color: rgba(251,176,60,.2); }
+.hover-bg-warning:hover { background-color: #fbb03c; transition:.25s; }
+
+.text-danger, .red { color: #cb2a2a; }
+.border-danger, .border-red { border-color: #cb2a2a!important; }
+.bg-danger, .bg-red { background-color: #cb2a2a; }
+.bg-danger-10 { background-color: #ffffff; background-color:rgba(203,42,42,.1); }
+.bg-danger-20 { background-color: #ffffff; background-color:rgba(203,42,42,.2); }
+.hover-bg-danger:hover { background-color: #cb2a2a; transition:.25s; }
+
+
+
+
+/* Other Colors */
+
+
+/*
+ * Source: Brighter Colors V2
+ * ALF March 2016
+*/
+
+
+.bright-red { color: #F57823; }
+.border-bright-red { border-color: #F57823; }
+.bg-bright-red { background-color: #F57823; }
+
+.bright-orange { color: #CE5000; }
+.border-bright-orange { border-color: #CE5000; }
+.bg-bright-orange { background-color: #CE5000; }
+
+.pale-yellow { color: #FAE7CB; }
+.border-pale-yellow { border-color: #FAE7CB; }
+.bg-pale-yellow { background-color: #FAE7CB; }
+
+.bright-green { color: #43C128; }
+.border-bright-green { border-color: #43C128; }
+.bg-bright-green { background-color: #43C128; }
+
+.bright-lt-green { color: #a4c23e; }
+.border-bright-lt-green { border-color: #a4c23e; }
+.bg-bright-lt-green { background-color: #a4c23e; }
+
+.bright-blue { color: #4691b9; }
+.border-bright-blue { border-color: #4691b9; }
+.bg-bright-blue { background-color: #4691b9; }
+
+.bright-purple { color: #84559f; }
+.border-bright-purple { border-color: #84559f; }
+.bg-bright-purple { background-color: #84559f; }
+
+.bright-gray { color: #d8d8d8; }
+.border-bright-gray { border-color: #d8d8d8; }
+.bg-bright-gray { background-color: #d8d8d8; }
+
+
+/*
+ * Rarely used
+ * Source: marketing brand colors, Natural Hues
+ */
+
+.natural-blue, .teal { color: #56888e; }
+.border-natural-blue, .border-teal { border-color: #56888e; }
+.bg-natural-blue, .bg-teal { background-color: #56888e; }
+
+.natural-green, .green { color: #828b3f; }
+.border-natural-green, .border-green { border-color: #828b3f; }
+.bg-natural-green, .bg-green { background-color: #828b3f; }
+
+.brass { color: #beb478; }
+.border-brass { border-color: #beb478; }
+.bg-brass { background-color: #beb478; }
+
+.natural-yellow,.mustard { color: #b28b3f; }
+.border-natural-yellow,.border-mustard { border-color: #b28b3f; }
+.bg-natural-yellow,.bg-mustard { background-color: #b28b3f; }
+
+.natural-red, .brick { color: #984a36; }
+.border-natural-red, .border-brick { border-color: #984a36; }
+.bg-natural-red, .bg-brick { background-color: #984a36; }
+
+.natural-brown, .brown { color: #876046; }
+.natural-border-brown, .border-brown { border-color: #876046; }
+.bg-natural-brown, .bg-brown { background-color: #876046; }
+
+.natural-amber { color: #fbb03c; }
+.natural-amber { border-color: #fbb03c; }
+
+.natural-dandelion { color: #c79337; }
+.natural-border-dandelion { border-color: #c79337; }
+
+
+
+
+
+/* TODO move somewhere else */
+/* TRANSITION BACKGROUNDS */
+.hover-bg-white:hover {
+  background-color: #fff;
+  transition:.25s;
+}
+.hover-bg-whiteish:hover {
+  background-color: #f4f4f4;
+  transition:.25s;
+}
+.hover-bg-gray:hover {
+  background-color: #fafafa;
+}
+
+
+
+
+
+/* TODO we really need another place to put these */
+/* Swiftype search box override */
+input[type=text].st-default-search-input {
+  display: block;
+  width: 100%;
+  padding: 7px 36px 7px 11px;
+  border: 1px solid #d2cdc8;
+  font-weight: 400;
+  color: #d2cdc8;
+  font-size: 14px;
+  line-height: 16px;
+  box-sizing: border-box;
+  background: #111 url('/public/media/icons/icon_search.svg') no-repeat 95% center;
+  background-position-x: calc(100% - 6px);
+  background-clip: padding-box;
+  border-radius: 1px;
+  box-shadow: none;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+input[type=text].st-default-search-input::-webkit-input-placeholder { color: #96918c; }
+input[type=text].st-default-search-input:-moz-placeholder { color: #96918c; }
+input[type=text].st-default-search-input::-moz-placeholder { color: #96918c; }
+input[type=text].st-default-search-input:-ms-input-placeholder { color: #96918c; }
+
+button:disabled, .button:disabled, .btn:disabled, .btn-primary:disabled {
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Schools team core styles & utilities
+============================================ */
+
+
+/* Styles for Bottom-sticky footer & mobile off-canvas nav */
+/* Plus styles for the wrappers that make it possible */
+html {
+  height:  100%;
+}
+body {
+  position: relative;
+  min-height: 100%;
+}
+footer.sticky.minimal, .sticky-footer-buffer.minimal {
+  height: 8.8rem;
+}
+@media (min-width: 52em) {
+  footer.sticky.minimal, .sticky-footer-buffer.minimal {
+    height: 4.6rem;
+  }
+}
+
+/* Second wrapper necessary to prevent overflow scrolling on iOs devices */
+#site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+
+#site-canvas {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  transition: 300ms ease all;
+}
+#site-canvas.show-nav  {
+  transform: translateX(18rem);
+  transform: translateX(18rem) tranlateZ(0);
+  transform: translate3d(18rem, 0, 0);
+  position: fixed;
+}
+#off-canvas-menu {
+  width: 18rem;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -18rem;
+  box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
+  overflow: scroll;
+}
+
+/* Basscss Overrides & Extensions */
+.container { max-width: 70em; }
+.serif {
+  font-family: 'Chronicle Deck A', 'Chronicle Deck B', Chronicle, georgia, 'times new roman', serif !important;
+}
+.sans-serif {
+  font-family:'Helvetica Neue',
+    Helvetica,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    sans-serif;
+}
+.px0 { padding-left: 0; padding-right: 0; }
+.pr1 { padding-right: 1em; }
+.pr2 { padding-right: 2em; }
+.pb2 { padding-bottom: 1.2em; } /* for header :( */
+.pl1 { padding-left: 1em; }
+.pl2 { padding-left: 2em; }
+
+
+/* Icons and logos*/
+.logo {
+  background: url('/public/img/logo2.png') no-repeat;
+  background-size: 70% auto;
+  height: auto;
+  text-indent: -9999px;
+  width: 266px;
+}
+
+.icon-facebook {
+  background: transparent url('/public/media/icons/icon-footer-fb.svg') center center no-repeat;
+  color: transparent;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.icon-twitter {
+  background: transparent url('/public/media/icons/icon-footer-twitter.svg') center center no-repeat;
+  color: transparent;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+
+/* Wagtail CMS overrides
+============================================ */
+
+h2 > p { font-size: inherit; }
+.rich-text > p {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.force-sans-serif * .serif { font-family: 'helvetica neue', helvetica, arial, sans-serif; }
+[data-block="two-column-rich-content-block"] .rich-text a { color: #f15a24; font-weight: bold; }
+.rich-text a { color: #3c3732; font-weight: bold; }
+.white .rich-text a { color: #fff; font-weight: bold; } /* Override for sections with dark backgrounds */
+[data-block="headline-hero-block"] .rich-text a { text-decoration: underline; font-weight: bold; color: #fff!important; }
+[data-block="two-column-rich-content-block"] .primary-col .rich-text p:first-child {
+  /* doesn't work when first paragraph is just an image, obviously */
+  font-size: 1.3em; font-weight: 100; line-height: 1.3;
+}
+
+/* TEMP HACKS TO FORMAT RICH TEXT FIELDS IN WAGTAIL */
+/* TODO: Remove this stuff and instead customize hallo.js */
+.rich-text img { float: none; margin-bottom: 0.875em; }
+[data-block="centered-rich-content-block"] .serif .rich-text h2 {
+  font-family: 'Chronicle Deck A', 'Chronicle Deck B', Chronicle, georgia, 'times new roman', serif;
+}
+[data-block="centered-rich-content-block"] .rich-text h2:first-child { margin-top: 0; margin-bottom: 1.5em;}
+[data-block="centered-rich-content-block"] .rich-text h2:first-child::first-line { line-height: 1.1; }
+
+[data-block="large-image-with-quote-or-caption-block"] .rich-text ol,
+[data-block="large-image-with-quote-or-caption-block"] .rich-text ul {
+  padding-left: 1.1em;
+}
+[data-block="large-image-with-quote-or-caption-block"] .rich-text ol li {
+  margin-bottom: .65em;
+  line-height: 1.3;
+}
+
+[data-block="huge-headline-with-button-block"] .rich-text { padding-top: 1.75rem; line-height: 1.1; }
+[data-block="huge-headline-with-button-block"] .rich-text b { font-weight: 800; color: #fcfcfc; }
+[data-block="huge-headline-with-button-block"] .light-theme .rich-text b { color: #242424 }
+[data-block="huge-headline-with-button-block"] .rich-text p { margin-bottom: 3rem; }
+
+.subhead {
+  letter-spacing: 0.04rem;
+  font-size: 0.69rem;
+  font-weight: 800;
+}
+
+[data-block="two-column-photo-background-block"] .rich-text ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: .875rem;
+}
+
+[data-block="two-column-photo-background-block"] .rich-text ul li a {
+  font-weight: 600;
+  display: block;
+  padding-top: .125rem;
+  padding-bottom: 1.75rem;
+}
+
+[data-block="two-column-photo-background-block"] .rich-text ul li a:hover {
+  text-decoration: underline;-webkit-text-decoration-color: #f0b423;-moz-text-decoration-color: #f0b423;text-decoration-color: #f0b423;
+  /* padding-left: 0.5rem; */
+  color: #ffffff;
+}
+
+[data-block="two-column-photo-background-block"] .rich-text ul li br { display: none; }
+
+
+[data-block="two-column-photo-background-block"] .bg-cover {
+  top:0; left:0; height:100%; width:100%; opacity:0.6!important;
+}
+
+
+/* Undo larger "first paragraph" flourish (above) for small/bold section headers */
+[data-block="two-column-rich-content-block"] .primary-col .rich-text p:first-child b { font-size: 1rem; }
+.answer-body .rich-text a { color: #f15a24; }
+.rich-text img { height: auto; }
+
+/* Captions adjacent to photos - override normal margins etc */
+.photo-caption p { margin-top: .75rem; margin-bottom: 0; }
+.photo-caption p:first-child { margin-top: 0; }
+
+.wagtail-userbar--bottom-right {
+  bottom: 5rem !important;
+  right: 1.25rem !important;
+}
+
+
+/* Hover Boxes */
+.colorline:hover, .colorline *, .colorline-accent-light:hover, .colorline-accent-light *, .colorline-orange, .colorline-orange *, .colorline-accent, .colorline-accent *, .colorline-lightest, .colorline-lightest * {text-decoration:none!important;}
+
+.colorline a, .colorline a *, .colorline-accent-light a, .colorline-accent-light a *, .colorline-lightest a, .colorline-lightest a *, .colorline-accent a, .colorline-accent a *, .colorline-orange a, .colorline-orange a * {
+border-bottom: solid!important;
+border-bottom-color: rgba(255,255,255,0)!important;
+border-width:2px;
+display:inline!important;
+transition-delay: .2s;
+transition-duration:.3s;
+}
+
+.colorline-accent-light:hover a, .colorline-accent-light:hover a * {
+border-bottom: solid!important;
+border-bottom-color: #f0b423!important;
+}
+
+.colorline-lightest:hover a, .colorline-lightest:hover a * {
+border-bottom: solid!important;
+border-bottom-color: #b4afaa!important;
+}
+
+.colorline-accent:hover a, .colorline-accent:hover a *, .colorline-orange:hover a, .colorline-orange:hover a * {
+border-bottom: solid!important;
+border-bottom-color: #f15a24!important;
+}
+
+.img-scale div {overflow:hidden;}
+.img-scale:hover img { transform: scale(1.02); }
+.img-scale img {transition: all .45s ease-in-out; } 
+
+/* container height fix for hover effect */
+.colorline-accent-light .compact-leading, .colorline-accent-light:hover .compact-leading { padding-bottom:5px;}
+
+
+/* Color Schemes 2up 3up content promo block */
+.dark-style {color:#f5f5f5;background-color:#5a5550;}
+.light-style {background:#ffffff;}
+.light-style div.h2 a {color:#3c3732!important;}
+.emphasis-style {color:#f5f5f5;background-color:#f0b423;}
+.emphasis-style a {color:#ffffff!important;}
+.emphasis-style .rich-text {color:#3c3732!important;}
+.alert-style {color:#f5f5f5;background-color:#d23c05;}
+
+/* override colorline accent light color for emphasis color scheme */
+.emphasis-style.colorline-accent-light:hover a, .emphasis-style.colorline-accent-light:hover a * {
+border-bottom: solid!important;
+border-bottom-color: #ffffff!important;
+}
+
+
+/* TODO we really need another place to put these */
+/* Swiftype search box override */
+input[type=text].st-default-search-input {
+  display: block;
+  width: 100%;
+  padding: 7px 36px 7px 11px;
+  border: 1px solid #d2cdc8;
+  font-weight: 400;
+  color: #d2cdc8;
+  font-size: 14px;
+  line-height: 16px;
+  box-sizing: border-box;
+  background: #111 url('/public/media/icons/icon_search.svg') no-repeat 95% center;
+  background-position-x: calc(100% - 6px);
+  background-clip: padding-box;
+  border-radius: 1px;
+  box-shadow: none;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+input[type=text].st-default-search-input::-webkit-input-placeholder { color: #96918c; }
+input[type=text].st-default-search-input:-moz-placeholder { color: #96918c; }
+input[type=text].st-default-search-input::-moz-placeholder { color: #96918c; }
+input[type=text].st-default-search-input:-ms-input-placeholder { color: #96918c; }
+
+/* Make placeholder text lighter */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */color: #b4afaa;}
+::-moz-placeholder { /* Firefox 19+ */color: #b4afaa;}
+:-ms-input-placeholder { /* IE 10+ */color: #b4afaa;}
+:-moz-placeholder { /* Firefox 18- */color: #b4afaa;}
+
+
+.outline-none {
+  outline: none;
+}
+
+.user-select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.list-style-position-inside {
+  list-style-position: inside;
+}
+
+.mirror {
+  transform: rotateY(180deg);
+}
+
+.grayscale {
+    filter: gray;
+    filter: grayscale(100%);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'https://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
